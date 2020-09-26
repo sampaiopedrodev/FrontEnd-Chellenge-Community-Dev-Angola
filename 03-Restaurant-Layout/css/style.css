@@ -1,0 +1,67 @@
+*{margin: 0px; padding: 0px; font-size: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; border: none; box-sizing: border-box;}
+
+html,body{height: 100%;}
+
+img{max-width: 100%;}
+
+ul, ol{list-style: none;}
+
+input{outline: 0;}
+
+button{border: none; outline: none; background: none; cursor: pointer; font-family: Arial, Helvetica, sans-serif;}
+
+a{color: black; font-size: 1em; font-weight: 500; text-decoration: none;}
+
+/***** const *****/
+:root{
+    --colorBlue: #2263f0;
+}
+
+
+
+/***** body *****/
+body{background: #ffffff;}
+
+
+
+/***** header ******/
+/*************************************************
+	Botão para abrir e fechar menu animado 
+*************************************************/
+#btn-menu{
+	padding: 0 4px;
+	cursor: pointer;
+}
+
+#btn-menu [class*="_"]{
+	display: block;
+    width: 28px;
+	height: 3px /*3px*/;
+    margin: 5px 0px;
+	background: #000000;
+    transition: all .35s;
+    border-radius: 100px;
+}
+
+.btnMenuActive ._1{
+	transform: translateY(7px) rotate(45deg);
+	/*transform: translateX(-10px);*/
+}
+
+.btnMenuActive ._2{
+	opacity: 0;
+	/*transform: translateX(-5px);*/
+}
+
+.btnMenuActive ._3{
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
