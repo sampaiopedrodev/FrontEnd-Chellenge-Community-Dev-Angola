@@ -35,7 +35,7 @@ body{background: #ffffff;}
 
 #btn-menu [class*="_"]{
 	display: block;
-    width: 28px;
+    width: 27px;
 	height: 3px /*3px*/;
     margin: 5px 0px;
 	background: #000000;
@@ -62,6 +62,394 @@ header{
     height: 70px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > [class*="_"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ._1 .logo{
+    font-size: 1.2em;
+}
+
+header ._2 .search-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #f1f1f1;
+    display: none;
+}
+
+header ._2 .search-wrapper i{
+    width: 30px;
+    text-align: center;
+}
+
+
+header ._2 .search-wrapper input{
+    background: #f1f1f1;
+    height: 32px;
+    width: 100%;
+    min-width: 10px;
+}
+
+header ._3 > *{
+    margin-left: 5px;
+}
+
+header ._3 .cart{
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: yellowgreen;
+}
+
+header ._3 .user i{
+    font-size: 1.2em;
+}
+
+header ._3 .cart p{
+    font-size: .95em;
+}
+
+
+
+
+
+main{
+    padding: 20px 4%;
+}
+
+.banner{
+    width: 100%;
+    border-radius: 8px;
+    padding: 22px 20px;
+    background: #f1f1f1;
+}
+
+.banner h3{
+    color: yellowgreen;
+    font-size: 1.2em;
+}
+
+.banner p{
+    color: #525252;
+    font-size: .9em;
+}
+
+.banner a{
+    color: yellowgreen;
+    text-align: right!important;
+    font-size: .92em;
+    margin-top: 15px;
+    display: block;
+}
+
+
+
+
+
+section h2{
+    font-size: 1.4em;
+    padding: 25px 0;
+}
+
+section .slide-menu{
+    /*overflow-x: scroll;
+    white-space: nowrap;*/
+    margin-top: 10px;
+}
+
+section .slide-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+section .slide-menu ul li{
+    width: 48px!important;
+    flex-grow: 1;
+    max-width: 48px!important;
+    height: 125px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin: 8px 12px;
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center!important;
+    /*display: inline-block;*/
+    text-align: center;
+    box-shadow: 0 0 6px 2px rgb(66 66 66 / 20%);
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+section .slide-menu ul li:first-child,
+section .slide-menu ul li:hover{
+    background: yellowgreen;
+}
+
+section .slide-menu ul li .img{
+    background: #ffffff;
+    border: 1px solid #e2e1e1;
+    /* width: 35px;
+    height: 35px; */
+    border-radius: 100%;
+    padding: 6px;
+    width: 40px;
+    text-align: center;
+}
+
+section .slide-menu ul li .img i{
+    font-size: 1.5em;
+}
+
+section .slide-menu ul li .name{
+    padding: 15px 0;
+    font-size: .95em;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+
+
+.cardapio{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.cardapio .item{
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.cardapio .item .img{
+    position: relative;
+    border: 1px solid #f1f1f1;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+}
+
+.cardapio .item .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.cardapio .item .time{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    font-size: .8em;
+    font-weight: 500;
+    padding: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardapio .item .name{
+    font-size: .98em;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+@media (min-width: 996px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header{
+        grid-column: 1/3;
+        justify-content: space-between;
+        padding: 0 4%;
+    }
+
+    main{
+        padding: 30px 50px;
+    }
+
+    .banner{
+        height: 250px;
+        display: flex;
+        align-items: center;
+        padding: 80px;
+    }
+
+    .banner .background-image{
+        flex-grow: 1;
+        max-width: 200px;
+    }
+
+    .banner .background-image img{
+        width: 170px;
+    }
+
+    .banner .text{
+        padding-left: 80px;
+    }
+
+    .banner .text{
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section{
+        padding-top: 50px;
+    }
+
+    aside{
+        padding: 30px 10px;
+    }
+}
+
+aside h3{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+aside .card{
+    width: 100%;
+    min-height: 150px;
+    background: blue;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .card span:nth-child(2){
+    float: right;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+aside .card span{
+    color: #f1f1f1;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+aside .itens{
+    padding: 40px 0;
+}
+
+aside .itens .item{
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+aside .itens .item img{
+    max-width: 80px;
+    height: 55px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+aside .itens .item p{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+aside .itens .item p.price{
+    color: #a0a0a0;
+}
+
+aside .price-total .total,
+aside .price-total .qtd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside .price-total span{
+    font-size: 1.2em;
+}
+
+aside .price-total .total{
+    padding: 12px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+aside .price-total span:nth-child(2){
+    font-weight: 700;
+}
+
+aside .qtd .qtds{
+    padding: 25px 0;
+}
+
+aside .qtd .qtds,
+aside .qtd .checkout{
+    flex-grow: 1;
+}
+
+aside .qtd .qtds p{
+    font-size: 1em;
+}
+
+aside .qtd .qtds .btn{
+    display: flex;
+    border: 1px solid #c0c0c0;
+    max-width: 80px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+aside .qtd .checkout{
+    background: greenyellow;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 996px){
+    aside{
+        display: none;
+    }
+
+    .banner .background-image img{
+        width: 100px;
+    }
+
+    section .slide-menu{
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .cardapio{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cardapio .item{
+        margin-bottom: 20px;
+        margin: 20px;
+    }
 }
