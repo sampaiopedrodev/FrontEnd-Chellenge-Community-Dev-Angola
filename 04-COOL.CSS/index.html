@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COOL.CSS | Framework </title>
+
+    <link rel="stylesheet" href="./css/cool.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="#btns">Botões</a></li>
+                <li><a href="#card">Cards</a></li>
+                <li><a href="#coletions">Coleções</a></li>
+                <li><a href="#forms">Formúlarios</a></li>
+                <li><a href="#tipografia">Tipografia</a></li>
+                <li><a href="#flex">Grid</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="logo">COOL.CSS</h1>
+
+        <p class="description-1">Uma nova esperiência para desenvolvimento web front-end</p>
+
+        <h4 class="title">Como Usar?</h4>
+
+        <p>Para usar o <a href="">COOL.CSS</a> baixar o arquivo <a href="">COOL.CSS.rar</a>, extrair os arquivos para qualquer directorio e importar o arquivo cool.css, e pronto, pode começar a desenvolver.</p>
+
+        <div class="code">
+            <code>
+                &lt;link rel="stylesheet" href="./css/cool.css"&gt;
+            </code>
+        </div>
+
+        <div class="components" id="btns">
+            <h4>Botões</h4>
+
+            <div class="elements">
+                <button class="btn">Meu Botão</button>
+
+                <button class="btn btn-icon">Enviar <i class="mdi mdi-send"></i></button>
+            </div>
+
+            <div class="code">
+                <code>
+                    // botão sem icon<br>
+                    &lt;button class="btn"&gt; Meu Botão &lt;/button&gt;
+                    <br><br>
+                    // botão com icon<br>
+                    &lt;button class="btn"&gt; Enviar &lt;i class="mdi mdi-send"&gt;&lt;/i&gt; &lt;/button&gt;
+                </code>
+            </div>
+        </div>
+
+        <div class="components" id="card">
+            <h4>Card</h4>
+
+            <div class="elements">
+                <div class="card">
+                    <h5>Titulo do card</h5>
+                    <p>
+                        Angola é um país no sul da África, com um território que abrange praias tropicais do Atlântico, além de um sistema labiríntico de rios e desertos subsaarianos que se estende até a Namíbia. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;div class="card"&gt;<br>
+                        &lt;h5&gt;Titulo do card&lt;/h5&gt;<br>
+                        &lt;p&gt;Titulo do card&lt;/h5&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+
+        <div class="components" id="coletions">
+            <h4>Coleções</h4>
+
+            <div class="elements">
+                <ul class="colection">
+                    <li class="colection-item">Item 1</li>
+                    <li class="colection-item">Item 2</li>
+                    <li class="colection-item">Item 3</li>
+                    <li class="colection-item">Item 4</li>
+                    <li class="colection-item">Item 5</li>
+                </ul>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;ul class="colection"&gt;<br>
+                        &lt;li class="colection-item"&gt;Item 1&lt;/li&gt;<br>
+                        &lt;li class="colection-item"&gt;Item 2&lt;/li&gt;<br>
+                        &lt;li class="colection-item"&gt;Item 3&lt;/li&gt;<br>
+                        &lt;li class="colection-item"&gt;Item 4&lt;/li&gt;<br>
+                        &lt;li class="colection-item"&gt;Item 5&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </code>
+            </div>
+        </div>
+
+        <div class="components" id="forms">
+            <h4>Inputs</h4>
+
+            <div class="elements">
+                <form>
+                    <input type="text" placeholder="Digite um texto aqui">
+                    <input type="number" placeholder="Digite um número">
+                </form>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;input type="text" placeholder="Digite um texto aqui"&gt;<br><br>
+                    &lt;input type="number" placeholder="Digite um número"&gt;
+                </code>
+            </div>
+        </div>
+
+        <div class="components" id="tipografia">
+            <h4>Tipografia</h4>
+
+            <div class="elements">
+                <h1>Titulo 1</h1>
+                <h2>Titulo 2</h2>
+                <h3>Titulo 3</h3>
+                <h4>Titulo 4</h4>
+                <h5>Titulo 5</h5>
+                <h6>Titulo 6</h6>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;h1&gt;Titulo 1&lt;/h1&gt;<br>
+                    &lt;h2&gt;Titulo 2&lt;/h2&gt;<br>
+                    &lt;h3&gt;Titulo 3&lt;/h3&gt;<br>
+                    &lt;h4&gt;Titulo 4&lt;/h4&gt;<br>
+                    &lt;h5&gt;Titulo 5&lt;/h5&gt;<br>
+                    &lt;h6&gt;Titulo 6&lt;/h6&gt;<br>
+                </code>
+            </div>
+
+
+            <h5>Paragrafo</h5>
+
+            <div class="elements">
+                <p>Paragrafo servem para escrever textos longos</p>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;p&gt;Paragrafo servem para escrever textos longos&lt;/p&gt;<br>
+                </code>
+            </div>
+        </div>
+
+
+        <div class="components" id="flex">
+            <h4>Flex</h4>
+
+            <div class="">
+                <div class="flex">
+                    <div class="element-1"><h3>Div Flex</h3></div>
+                    <div class="element-2"><h3>Div Flex</h3></div>
+                    <div class="element-3"><h3>Div Flex</h3></div>
+                </div>
+
+                <h6>Justify Column</h6>
+                <div class="flex flex-direction-column">
+                    <div class="element-1"><h3>Div Flex</h3></div>
+                    <div class="element-2"><h3>Div Flex</h3></div>
+                    <div class="element-3"><h3>Div Flex</h3></div>
+                </div>
+            </div>
+
+            <div class="code">
+                <code>
+                    &lt;h1&gt;Titulo 1&lt;/h1&gt;<br>
+                    &lt;h2&gt;Titulo 2&lt;/h2&gt;<br>
+                    &lt;h3&gt;Titulo 3&lt;/h3&gt;<br>
+                    &lt;h4&gt;Titulo 4&lt;/h4&gt;<br>
+                    &lt;h5&gt;Titulo 5&lt;/h5&gt;<br>
+                    &lt;h6&gt;Titulo 6&lt;/h6&gt;<br>
+                </code>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
