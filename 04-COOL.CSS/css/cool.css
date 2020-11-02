@@ -171,6 +171,14 @@ input:focus{
     display: flex;
 }
 
+.flex > *{
+    flex-grow: 1;
+}
+
 .flex-direction-column{
     flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
 }
